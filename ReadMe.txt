@@ -44,31 +44,30 @@ class Izdevums:
 Programmas izmantošana
 Lietotājs, palaižot programmu (python main.py), redz izvēlni ar sekojošām iespējām:
 
-markdown
-Kopēt
-Rediģēt
+
 === Virtuālais budžeta plānotājs ===
 1. Pievienot izdevumu
 2. Rādīt tēriņu kopsavilkumu un kopējās izmaksas
 3. Dzēst izdevumu
 4. Rādīt visus izdevumus
 5. Iziet
-✅ Pievienot izdevumu
+
+ - Pievienot izdevumu
 Lietotājs ievada summu, kategoriju un (neobligāti) aprakstu.
 
 Izdevums tiek ierakstīts budzets.csv.
 
-✅ Kopsavilkums un kopējās izmaksas
+- Kopsavilkums un kopējās izmaksas
 Rāda tēriņu sadalījumu pa kategorijām.
 
 Aprēķina un izvada kopējo tēriņu summu.
 
-✅ Dzēst izdevumu
+- Dzēst izdevumu
 Lietotājam tiek parādīts saraksts ar visiem ierakstiem un kārtas numuriem.
 
 Pēc numura ievades konkrētais izdevums tiek izņemts no faila.
 
-✅ Rādīt visus izdevumus
+- Rādīt visus izdevumus
 Tiek izdrukāti visi esošie ieraksti hronoloģiskā secībā.
 
 Papildu informācija
@@ -78,7 +77,5 @@ Katra darbība ir interaktīva, ar kļūdu apstrādi un lietotājam draudzīgu z
 
 Visi dati tiek glabāti UTF-8 kodējumā.
 
-Autors
+Autors:
 Miks Kristaps Ozoliņš
-Rīgas Tehniskā universitāte, 2025
-Gala projekts priekšmetā Datu struktūras
