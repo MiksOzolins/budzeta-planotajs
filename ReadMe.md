@@ -39,43 +39,45 @@ class Izdevums:
         self.kategorija = kategorija
         self.apraksts = apraksts
         self.datums = datetime.now().strftime("%Y-%m-%d %H:%M")
+```
+
 Šī struktūra tiek izmantota gan datu ievadē, gan eksportā uz CSV.
 
-Programmas izmantošana
-Lietotājs, palaižot programmu (python main.py), redz izvēlni ar sekojošām iespējām:
+## Programmas izmantošana
 
+Lietotājs, palaižot programmu (`python main.py`), redz izvēlni ar sekojošām iespējām:
 
+```
 === Virtuālais budžeta plānotājs ===
 1. Pievienot izdevumu
 2. Rādīt tēriņu kopsavilkumu un kopējās izmaksas
 3. Dzēst izdevumu
 4. Rādīt visus izdevumus
 5. Iziet
+```
 
- - Pievienot izdevumu
-Lietotājs ievada summu, kategoriju un (neobligāti) aprakstu.
+### 1. Pievienot izdevumu
+- Lietotājs ievada summu, kategoriju un (neobligāti) aprakstu.
+- Izdevums tiek ierakstīts `budzets.csv`.
 
-Izdevums tiek ierakstīts budzets.csv.
+### 2. Kopsavilkums un kopējās izmaksas
+- Rāda tēriņu sadalījumu pa kategorijām.
+- Aprēķina un izvada kopējo tēriņu summu.
 
-- Kopsavilkums un kopējās izmaksas
-Rāda tēriņu sadalījumu pa kategorijām.
+### 3. Dzēst izdevumu
+- Lietotājam tiek parādīts saraksts ar visiem ierakstiem un kārtas numuriem.
+- Pēc numura ievades konkrētais izdevums tiek izņemts no faila.
 
-Aprēķina un izvada kopējo tēriņu summu.
+### 4. Rādīt visus izdevumus
+- Tiek izdrukāti visi esošie ieraksti hronoloģiskā secībā.
 
-- Dzēst izdevumu
-Lietotājam tiek parādīts saraksts ar visiem ierakstiem un kārtas numuriem.
+## Papildu informācija
 
-Pēc numura ievades konkrētais izdevums tiek izņemts no faila.
+- Programma automātiski izveido CSV failu, ja tas neeksistē, un pievieno galveni.
+- Katra darbība ir interaktīva, ar kļūdu apstrādi un lietotājam draudzīgu ziņojumu sistēmu.
+- Visi dati tiek glabāti UTF-8 kodējumā.
 
-- Rādīt visus izdevumus
-Tiek izdrukāti visi esošie ieraksti hronoloģiskā secībā.
+## Autors
 
-Papildu informācija
-Programma automātiski izveido CSV failu, ja tas neeksistē, un pievieno galveni.
+**Miks Kristaps Ozoliņš**  
 
-Katra darbība ir interaktīva, ar kļūdu apstrādi un lietotājam draudzīgu ziņojumu sistēmu.
-
-Visi dati tiek glabāti UTF-8 kodējumā.
-
-Autors:
-Miks Kristaps Ozoliņš
